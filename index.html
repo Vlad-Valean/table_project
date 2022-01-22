@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_table</title>
+
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="banner">
+        <h1 class="banner">Shop & User Management App</h1>
+    </div>
+
+    <div class="content">
+        <nav class="menu">
+            <div><button class="menu-btn fa fa-bars" id="menu" onclick="action()"></button></div>
+
+            <a href="#users" class="fa fa-user">
+                <span id="users-span">Users</span>
+            </a>
+            <a href="#buy" class="fa fa-buy">
+                <span id="buy-span">Buy</span>
+            </a>
+        </nav>
+        <div id="users"></div>
+        <section>
+            <table id="buy">
+                <tr id="table-head">
+                    <th>Product</th>
+                    <th>Code</th>
+                    <th>Available</th>
+                    <th>Price</th>
+                    <th>5 Star Rating</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+
+                <tr class="col">
+                    <td>Leaf Rake</td>
+                    <td>gdn 0011</td>
+                    <td>March 19, 2019</td>
+                    <td>$19.95</td>
+                    <td>4</td>
+                    <td><button class="details-btn"><div class="fa fa-pen"></div><p class="button-text">Details</p></button></td>
+                    <td><button class="trash-btn"><div class="fa fa-trash"></div><p class="button-text">Delete</p></button></td>
+                </tr>
+
+                <tr class="col">
+                    <td>Garden Cart</td>
+                    <td>gdn 0023</td>
+                    <td>March 18, 2019</td>
+                    <td>$32.99</td>
+                    <td>5</td>
+                    <td><button class="details-btn"><div class="fa fa-pen"></div><p class="button-text">Details</p></button></td>
+                    <td><button class="trash-btn"><div class="fa fa-trash"></div><p class="button-text">Delete</p></button></td>
+                </tr>
+
+                <tr class="col">
+                    <td>Hammer</td>
+                    <td>tbx 0048</td>
+                    <td>May 21, 2019</td>
+                    <td>$8.90</td>
+                    <td>3</td>
+                    <td><button class="details-btn"><div class="fa fa-pen"></div><p class="button-text">Details</p></button></td>
+                    <td><button class="trash-btn"><div class="fa fa-trash"></div><p class="button-text">Delete</p></button></td>
+                </tr>
+
+                <tr class="col">
+                    <td>Saw</td>
+                    <td>tbx 0022</td>
+                    <td>May 15, 2019</td>
+                    <td>$11.55</td>
+                    <td>4</td>
+                    <td><button class="details-btn"><div class="fa fa-pen"></div><p class="button-text">Details</p></button></td>
+                    <td><button class="trash-btn"><div class="fa fa-trash"></div><p class="button-text">Delete</p></button></td>
+                </tr>
+
+                <tr class="col">
+                    <td>Video Game Controller</td>
+                    <td>gmg 0042</td>
+                    <td>October 15, 2018</td>
+                    <td>$35.95</td>
+                    <td>3</td>
+                    <td><button class="details-btn"><div class="fa fa-pen"></div><p class="button-text">Details</p></button></td>
+                    <td><button class="trash-btn"><div class="fa fa-trash"></div><p class="button-text">Delete</p></button></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
