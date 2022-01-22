@@ -97,7 +97,7 @@ a {
 }
 
 .fa-user span {
-    padding-left:10px;
+    padding-left:7px;
 }
 
 .fa-buy{
@@ -111,14 +111,14 @@ a {
 }
 
 .fa-buy span {
-    padding-left:10px;
+    padding-left:7px;
 }
 
 .fa-pen::before{
     content: '\f303';
     display: inline-block;
     background-color: #fff;
-    padding:6px;
+    padding:9px;
     border-radius:50%;
 }
 
@@ -126,7 +126,7 @@ a {
     content: '\f1f8';
     display: inline-block;
     background: #fff;
-    padding:6px;
+    padding:9px;
     border-radius:50%;
 }
 
@@ -162,7 +162,7 @@ th {
     text-align: center;
     padding:8px;
     width: fit-content;
-    background-color: lightgrey;
+    background-color:rgb(225, 225, 225);
 }
 
 td {
@@ -189,7 +189,7 @@ tr:nth-child(odd) {
 }
 
 .details-btn, .trash-btn {
-    border-radius:25px;
+    border-radius:20px;
     border:none;
     background-color: #c1d1e2;
     cursor: pointer;   
@@ -202,6 +202,22 @@ tr:nth-child(odd) {
     font-weight: 600;
 }
 
+@media  screen and (max-width:1000px) {
+    
+    .button-text {
+        display: none;
+    }
+
+    .details-btn, .trash-btn {
+        background-color: transparent;
+    }        
+
+    .fa-pen::before, .fa-trash::before {
+        background-color: rgb(225, 225, 225);
+    }
+    
+}
+
 @media screen and (max-width:700px) {
     .content {
         flex-direction: column;
@@ -210,10 +226,6 @@ tr:nth-child(odd) {
     .menu {
         flex-direction: row;
         flex-grow: 0 !important;
-    }
-
-    .button-text {
-        display: none;
     }
 
     table {
@@ -235,9 +247,12 @@ tr:nth-child(odd) {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
     .col {
+        position: relative;
         border: 1px solid #4080d2;
         border-radius: 10px;
+        padding:5px;
     }
 
     td {
@@ -246,9 +261,18 @@ tr:nth-child(odd) {
     }
 
     td:nth-last-child(1), td:nth-last-child(2) {
-        display: inline-block;
+        position:absolute;
+        top:5px;
     }
 
+    td:nth-last-child(1) {
+        padding:0px;
+        right:5px;
+    }
+
+    td:nth-last-child(2) {
+        right:45px;
+    }
 
 }
 

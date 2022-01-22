@@ -21,7 +21,7 @@ async function action() {
         val--;
         act.style.transform = 'initial';
         if(container.style.flex != 'column') {
-            menu.style.flex = '3';
+            menu.style.flex = '10%';
         }
         await new Promise(r => setTimeout(r, 250));
         users.style.display = 'initial';
