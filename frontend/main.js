@@ -5,17 +5,13 @@ let menu = document.querySelector(".menu");
 let container = document.querySelector(".content")
 
 async function action() {
-    if(act.checked)
+    users.classList.toggle('d-none');
+    buy.classList.toggle('d-none');
+    
+    if(!act.checked && container.style.flex != 'column')
     {
-        menu.style.flex = '0';
-        users.style.display = 'none';
-        buy.style.display = 'none';
+        menu.style.flex = '10%';
     } else {
-        if(container.style.flex != 'column') {
-            menu.style.flex = '10%';
-        }
-        await new Promise(r => setTimeout(r, 250));
-        users.style.display = 'initial';
-        buy.style.display = 'initial';
+        menu.style.flex = '0';
     }
 }

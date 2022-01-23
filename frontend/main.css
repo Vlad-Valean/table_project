@@ -80,6 +80,7 @@ a {
     transform: rotate(90deg);
 }
 
+
 .fa {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -142,6 +143,10 @@ a {
     background: #fff;
     padding:9px;
     border-radius:50%;
+}
+
+.d-none {
+    display:none;
 }
 
 .fa-pen {
